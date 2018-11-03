@@ -19,9 +19,9 @@ contract Transmute {
     }
 
     // Computes how many coins should be supplied for burning some amount of token
-    function _toCoin (uint256 amount) view {
+    function _toCoin (uint256 amount) returns (uint256) {
         // TODO: This should be deflationary based on block number
-        return amount // Right now its hella linear
+        return amount; // Right now its hella linear
     }
 
 
